@@ -250,6 +250,7 @@ class CreateElements {
   
   creator.createTextarea();
   const text = document.getElementById('textarea');
+  text.focus()
   creator.createButtonWrapper();
   const localLang = localStorage.getItem('language')
   creator.createKeyboard(localLang ? localLang : creator.language);

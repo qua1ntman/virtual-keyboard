@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10vh 10vw;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 35%;
+    background-color: rgb(126, 126, 126);
+    color: white;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  
+  .grid-wrapper {
+    border-radius: 10px;
+    user-select: none;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 1vh 0;
+  }
+  .grid-wrapper > div {
+    display: grid;
+    gap: 0.602409%;
+    width: 100%;
+  }
+  .grid-wrapper > div > div {
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+  }
+  .grid-wrapper > div > div:hover {
+    cursor: pointer;
+  }
+  
+  .row-1 {
+    grid-template-columns: repeat(13, 6.02409%) 13.85542%;
+  }
+  
+  .row-2 {
+    grid-template-columns: 6.6265% repeat(13, 6.02409%) 6.6265%;
+  }
+  
+  .row-3 {
+    grid-template-columns: 13.85542% repeat(11, 6.02409%) 12.6506%;
+  }
+  
+  .row-4 {
+    grid-template-columns: 13.85542% repeat(13, 6.02409%);
+  }
+  
+  .row-5 {
+    grid-template-columns: 9.337349% repeat(2, 6.02409%) 40.36144% 6.02409% 9.337349% repeat(3, 6.02409%);
+  }
+  
+  .letter-btn {
+    background-color: rgb(134, 134, 134);
+  }
+  .letter-btn:hover {
+    background-color: rgb(187, 187, 187);
+  }
+  
+  .not-letter-btn {
+    background-color: rgb(97, 97, 97);
+  }
+  .not-letter-btn:hover {
+    background-color: rgb(129, 129, 129);
+  }
+  
+  .mini-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .description {
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 2vh 0;
+    align-self: flex-start;
+  }
+  
